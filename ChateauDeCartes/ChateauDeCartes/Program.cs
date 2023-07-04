@@ -27,6 +27,6 @@ if (nbCartes < 2)
         // Ajoute 1 étage.
         nbEtages++;
     }
-    Console.WriteLine("Vous avez fait " + nbEtages + (nbCartes > 0 ? " et il vous reste " + nbCartes + " cartes" : " tout rond !"));
+    Console.WriteLine("Vous avez fait " + nbEtages +" étages"+(nbCartes > 0 ? " et il vous reste " + nbCartes + " cartes" : " tout rond !"));
 
 }
