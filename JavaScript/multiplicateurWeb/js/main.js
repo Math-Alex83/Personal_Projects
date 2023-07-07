@@ -14,12 +14,15 @@ document.getElementById('valider').addEventListener('click', bt =>{
         return;
     console.log(bt.target);
     results.innerHTML ="";
-    for(let i=1; i<=10; i++){
+    var rep = document.querySelector('#results');
+    rep.innerText=("Le résultat pour la table de"
+    +" "+affichage.innerText+" "+"est :"+"\r\r");
+    for(let i=1; i<=10; i++)
+    {
        let li = document.createElement('li');
        let em = document.createElement('em');
        em.innerText = (Number(affichage.innerText)*i);
        em.classList.add('result');
-    
        li.innerHTML = affichage.innerText + ' x ' + i + ' = ';
        li.appendChild(em);
        results.appendChild(li);
